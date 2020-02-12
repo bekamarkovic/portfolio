@@ -90,7 +90,7 @@
       align-items: center; }
       #sredina .drzac .blokovi #dodatniDiv #slikaAutora img {
         width: 90%; }
-        #sredina .drzac .blokovi #dodatniDiv #slikaAutora img :first-child {
+        #sredina .drzac .blokovi #dodatniDiv #slikaAutora img:first-child {
           display: none; }
     #sredina .drzac .blokovi p {
       font-size: 20px; }
