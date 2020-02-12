@@ -91,7 +91,7 @@ body {
 
 #slika {
   width: 100%;
-  min-height: 600px;
+  min-height: 630px;
   margin-top: 95px;
   display: flex;
   justify-content: center;
@@ -195,28 +195,37 @@ body {
 .vestine {
   width: 90%;
   background-color: #000;
-  margin: 10px auto; }
-  .vestine .skills {
-    text-align: right;
-    padding: 15px;
-    color: #000;
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: #fff;
-    border: 2px solid #000; }
-    .vestine .skills .ime {
-      float: left;
-      text-transform: uppercase; }
-    .vestine .skills .procenat {
-      text-align: rigth; }
-    .vestine .skills .html {
-      width: 90%; }
-    .vestine .skills .css {
-      width: 85%; }
-    .vestine .skills .photo {
-      width: 40%; }
-    .vestine .skills .js {
-      width: 60%; }
+  margin: 10px auto;
+  border-radius: 10px; }
+
+.skills {
+  text-align: right;
+  padding: 15px;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px 0px 0px 10px; }
+
+.html {
+  width: 90%; }
+
+.css {
+  width: 85%; }
+
+.photo {
+  width: 40%; }
+
+.js {
+  width: 60%; }
+
+.procenat {
+  text-align: rigth; }
+
+.ime {
+  float: left;
+  text-transform: uppercase; }
 
 table {
   margin: 0px auto;
