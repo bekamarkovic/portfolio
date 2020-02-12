@@ -124,7 +124,7 @@ body {
 
 #slika {
     width: 100%;
-    min-height: 600px;
+    min-height: 630px;
     margin-top: 95px;
     display: flex;
     justify-content: center;
@@ -256,29 +256,34 @@ body {
     width: 90%;
     background-color: $boja;
     margin: 10px auto;
-    .skills {
-        text-align: right;
-        padding: 15px;
-        color: $boja;
-        margin-bottom: 20px;
-        font-size: 20px;
-        background-color: $pozadina;
-        border: 2px solid $boja;
-        .ime {
-            float:left;
-            text-transform:uppercase;
-        }
-        .procenat {
-            text-align:rigth;
-        }
-        .html {width:90%; }
-        .css {width:85%; }
-        .photo {width:40%; }
-        .js {width:60%; }
-    }
+    border-radius: 10px;
+}
+
+.skills {
+    text-align: right;
+    padding: 15px;
+    color: $boja;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: $pozadina;
+    border: 2px solid $boja;
+    border-radius: 10px 0px 0px 10px;      
+}
+
+.html {width:90%; }
+.css {width:85%; }
+.photo {width:40%; }
+.js {width:60%; }
+
+.procenat {
+    text-align:rigth;
+}
+
+.ime {
+    float:left;
+    text-transform:uppercase;
 }
   
-
 table {
     margin: 0px auto;
     width: 90%;
