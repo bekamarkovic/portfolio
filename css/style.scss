@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$boja: #000;
+$boja2: #c4464c;
+$pozadina : #fff;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: {
+        image: url("../slike/pozadina6.jpg");
+        size: cover;
+        position: center;
+        attachment: fixed; 
+    }
+}
+
+#zaglavlje {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $pozadina;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    border-bottom: 1px $boja solid;
+    #logo {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    #meni {
+        width: 35%;
+        padding: 30px;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin-right: 3%;
+                a{
+                    text: {
+                        decoration: none;
+                        transform: uppercase;
+                    }
+                    color: $boja;
+                    font-size: 2.2vw;
+                    &:hover {
+                        font: {
+                            size: 2.3vw;
+                            weight: bold;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #meni2 {
+        display: none;
+        width: 30%;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin-left: 25px;
+                a {
+                    text-decoration: none;
+                    color: $boja;
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+    #hamburger {
+        display: none;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 25px;
+            color: $boja;
+            text-decoration: none;
+        }
+        #sakriveniMeni {
+            display: none;
+            width: 30%;
+            position: fixed;
+            top: 70px;
+            background-color: $pozadina;
+            padding: 3%;
+            &:target {
+                display: flex;
+                justify-content: center;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 4vw;
+                        color: $boja;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#slika {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        #aleks {
+            width: 100%;
+            text-align: center;
+            font-size: 8vw;
+            text-transform: uppercase;
+            color: $pozadina;
+            letter-spacing: 15px; 
+            position: relative;
+            animation: rotate-scale-up 1s linear both;
+            animation-name: animacija;
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0); 
+            } 
+        }          
+        #hi {
+            display: none;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            h1 {
+                color: $pozadina;
+                letter-spacing: 3px;
+                font-size: 7vw;
+            }
+        }
+}
+
+#sredina {
+    width: 100%;
+    background-color: $pozadina;
+    .drzac {
+        width: 100%;
+        padding-top: 100px;
+        .blokovi {
+            width: 80%;
+            border: 2px $boja2 solid;
+            border-radius: 20px 0px 20px 0px;
+            margin: 0px auto 50px auto;
+            padding: 2%;
+            #dodatniDiv {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                #slikaAutora {
+                    width: 23%;
+                    #drugaSlika {
+                        display: none;
+                    }
+                    img {
+                        width: 100%;
+                        border-radius: 3%;
+                    }
+                }
+                #tekstOAutoru {
+                    width: 65%;
+                    margin-top: 10px;
+                }
+            }
+            h2 {
+                text-align: center;
+                font-size: 45px;
+                margin-bottom: 40px;
+                i {
+                    margin-right: 10px;
+                    font-size: 40px;
+                }
+            }
+            p {
+                font-size: 25px;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+            .work {
+                width: 23%;
+                border: 2px solid $boja;
+                &:nth-child(2) {
+                    border-radius: 20px 0px 0px 0px;
+                    img {
+                        border-radius: 20px 0px 0px 0px;
+                    }
+                }
+                &:nth-child(5) {
+                    border-radius: 0px 0px 20px 0px;
+                }
+                float: left;
+                margin-left: 1.5%;
+                img {
+                    width: 100%;
+                }
+                form {
+                    text-align: center;
+                    button {
+                        margin-bottom: 20px;
+                        padding: 10px;
+                        border: {
+                            radius: 10px;
+                            color: $boja;
+                        }
+                        background-color: $pozadina;
+                        color: $boja;
+                        font-size: 15px;
+                        &:hover {
+                            background-color: $boja;
+                            color: $pozadina;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.cleaner {clear: both;}
+
+.vestine {
+    width: 90%;
+    background-color: $boja;
+    margin: 10px auto;
+    .skills {
+        text-align: right;
+        padding: 15px;
+        color: $boja;
+        margin-bottom: 20px;
+        font-size: 20px;
+        background-color: $pozadina;
+        border: 2px solid $boja;
+        .ime {
+            float:left;
+            text-transform:uppercase;
+        }
+        .procenat {
+            text-align:rigth;
+        }
+        .html {width:90%; }
+        .css {width:85%; }
+        .photo {width:40%; }
+        .js {width:60%; }
+    }
+}
+  
+
+table {
+    margin: 0px auto;
+    width: 90%;
+    td {
+        padding: 10px;
+        text-align: center; 
+        font-size: 25px;
+        #message {
+            height: 150px;
+            width: 60%;
+            border: {
+                style: none none solid none;
+                bottom: 2px solid $boja;
+            }
+        }
+    }
+    input {
+        width: 60%;
+        height: 40px;
+        border-style: none none solid none;
+        border-color: $boja;
+    }
+    .btn {
+        width: 40%;
+        padding: 10px;
+        background-color: $boja2;
+        color: $pozadina;
+        border: {
+            radius: 15px;
+            color: $boja;
+        }
+        margin-top: 40px;
+        font-weight: bold;
+        &:hover {
+            background-color: $boja;
+        }
+    }
+}
+
+#futer {
+    width: 100%;
+    border-top: 1px solid $boja;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    .linkovi {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: $boja;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+}
