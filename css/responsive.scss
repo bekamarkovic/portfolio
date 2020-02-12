@@ -1,0 +1,182 @@
+$boja: #000;
+$boja2: #c4464c;
+
+@media screen and (max-width: 992px) {
+   #zaglavlje {
+        #meni {
+            display: none;
+        }
+        #meni2 {
+            display: flex;
+            align-items: center;
+        }
+    }
+    #sredina {
+        .drzac {
+            .blokovi { 
+                #dodatniDiv {
+                    #slikaAutora{
+                        width: 40%;
+                    } 
+                    #tekstOAutoru{
+                        width: 50%;
+                    }
+                }
+                .work {
+                    width: 45%;
+                    margin-left: 3%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-image: none;
+        background-color: $boja2;
+    }
+    #zaglavlje {
+        #meni2 {
+            display: none;
+        }
+        #hamburger {
+            display: flex;
+        }
+    }
+    #prezime {
+        display: none;
+    }
+    #slika {
+        min-height: 380px;
+        flex-direction: column;
+        #hi {
+            display: block;
+        }
+    }
+    #sredina {
+        .drzac {
+            .blokovi {
+                width: 90%;
+                border-radius: 20px;
+                #dodatniDiv {
+                    flex-direction: column;
+                    align-items: center;
+                    #slikaAutora {
+                        width: 90%;
+                        display: flex;
+                        justify-content: space-around;
+                        img {
+                            width: 45%;
+                        }
+                        #drugaSlika {
+                            display: block;
+                        }
+                    }
+                    #tekstOAutoru {
+                        width: 90%;
+                        margin-top: 40px;
+                    }
+                }
+                .work {
+                    &:nth-child(3){
+                        border-radius: 0px 20px 0px 0px;
+                        img {
+                            border-radius: 0px 20px 0px 0px;
+                        }
+                    }
+                    &:nth-child(4){
+                        border-radius: 0px 0px 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+    table {
+        td {
+            #message {
+                border: 2px $boja solid;
+                border-radius: 20px;
+                width: 80%;
+            }
+        }
+        input {
+            border-style: solid;
+            border-radius: 20px;
+            width: 80%;
+        }
+    }
+    #futer {
+        flex-direction: column;
+        align-items: center;
+        .linkovi {
+            width: 90%;
+            h3 {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+   #slika {
+        #aleks {
+            font-size: 13vw;
+        }
+        #hi {
+            h1 {
+                font-size: 11vw;
+            }
+        }
+   }
+    #sredina {
+        .drzac {
+            .blokovi { 
+                margin-bottom: 0px;
+                border: {
+                    style: none none solid none;
+                    radius: 0px;
+                }
+                width: 100%;
+                padding: 0% 5% 5% 5%;
+                #dodatniDiv {
+                    #slikaAutora {
+                        width: 80%;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            width: 90%;
+                            :first-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 20px;
+                } 
+                h2 {
+                    font-size: 35px;
+                    i {
+                        font-size: 30px;
+                    }
+                }
+                .work {
+                    width: 90%;
+                    margin-left: 4%;
+                    margin-bottom: 25px;
+                    &:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5){
+                        border-radius: 20px;
+                        img{
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .skills {
+        font-size: 15px;
+    }
+}
