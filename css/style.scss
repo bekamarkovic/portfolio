@@ -138,7 +138,7 @@ body {
             letter-spacing: 15px; 
             position: relative;
             animation: rotate-scale-up 1s linear both;
-            animation-name: animacija;
+            animation-name: fadeInLeft;
         }
         @keyframes fadeInLeft {
             from {
