@@ -257,31 +257,27 @@ body {
     background-color: $boja;
     margin: 10px auto;
     border-radius: 10px;
-}
-
-.skills {
-    text-align: right;
-    padding: 15px;
-    color: $boja;
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: $pozadina;
-    border: 2px solid $boja;
-    border-radius: 10px 0px 0px 10px;      
-}
-
-.html {width:90%; }
-.css {width:85%; }
-.photo {width:40%; }
-.js {width:60%; }
-
-.procenat {
-    text-align:rigth;
-}
-
-.ime {
-    float:left;
-    text-transform:uppercase;
+    .skills {
+        text-align: right;
+        padding: 15px;
+        color: $boja;
+        margin-bottom: 20px;
+        font-size: 20px;
+        background-color: $pozadina;
+        border: 2px solid $boja;
+        border-radius: 10px 0px 0px 10px;
+        .procenat {
+            text-align:rigth;
+        }      
+        .ime {
+            float:left;
+            text-transform:uppercase;
+        }
+    }
+    .html {width:90%; }
+    .css {width:85%; }
+    .photo {width:40%; }
+    .js {width:60%; }
 }
   
 table {
