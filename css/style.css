@@ -197,35 +197,28 @@ body {
   background-color: #000;
   margin: 10px auto;
   border-radius: 10px; }
-
-.skills {
-  text-align: right;
-  padding: 15px;
-  color: #000;
-  margin-bottom: 20px;
-  font-size: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
-  border-radius: 10px 0px 0px 10px; }
-
-.html {
-  width: 90%; }
-
-.css {
-  width: 85%; }
-
-.photo {
-  width: 40%; }
-
-.js {
-  width: 60%; }
-
-.procenat {
-  text-align: rigth; }
-
-.ime {
-  float: left;
-  text-transform: uppercase; }
+  .vestine .skills {
+    text-align: right;
+    padding: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px 0px 0px 10px; }
+    .vestine .skills .procenat {
+      text-align: rigth; }
+    .vestine .skills .ime {
+      float: left;
+      text-transform: uppercase; }
+  .vestine .html {
+    width: 90%; }
+  .vestine .css {
+    width: 85%; }
+  .vestine .photo {
+    width: 40%; }
+  .vestine .js {
+    width: 60%; }
 
 table {
   margin: 0px auto;
